@@ -1,5 +1,5 @@
 #include <iostream>
-
+#include <clocale>
 using namespace std;
 
 //Обыкновенная дробь
@@ -43,6 +43,7 @@ Fraction addFractions(const Fraction& a, const Fraction& b) {
 
 //Основная программа
 int main() {
+    setlocale(LC_ALL,".65001");
     // а) десятичные дроби
     double d1 = 1.25, d2 = 3.75;
     cout << "Сложение десятичных дробей:\n";
